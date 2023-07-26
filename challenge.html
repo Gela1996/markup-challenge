@@ -64,23 +64,20 @@ color: aliceblue;
 }
 
 .grid-container {
+    justify-content: space-between;
     background-color: azure;
     display: grid;
     justify-content: space-evenly;
-    grid-template-columns: repeat(3), 1fr;
-    grid-template-rows: repeat(2);
+    grid-template-columns: repeat(3, 1fr);
     gap: 10px;
     padding: 10px;
-
 }
-.grid-container> div {
-    padding: 20px 0;
-    font-size: 30px;
+
+grid-container img {
+    padding: 20px;
     text-align: center;
 }
-.img1 {
-    
-}
+
 
     </style>
 </head>
