@@ -54,28 +54,61 @@ color: aliceblue;
     text-align: center;
     padding: 20px;
 }
+.services {
+    padding: 10px;
+}
 .portfolio {
     text-align: center;
     padding: 20px;
     background-color: azure;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
 }
 .portfolio p {
     font-style: italic;
 }
+.icon-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 20px;
+   
+}
 
 .grid-container {
-    justify-content: space-between;
+ 
     background-color: azure;
     display: grid;
     justify-content: space-evenly;
     grid-template-columns: repeat(3, 1fr);
-    gap: 10px;
-    padding: 10px;
+    gap: 15px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+
 }
 
-grid-container img {
+.grid-container .img1
+.grid-container .img2
+.grid-container .img3
+.grid-container .img4
+.grid-container .img5
+.grid-container .img6 {
     padding: 20px;
     text-align: center;
+    height: 150px;
+    width: 100%;
+}
+
+.about {
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
+.ul-container {
+    justify-content: center;
+    display: flex;
 }
 
 
@@ -100,13 +133,26 @@ grid-container img {
     <button class="button">TELL ME MORE</button>
     </div>
 
+
 <div class="services">
     <h1 style="text-align: center">SERVICES</h1>
     <p>Lorem ipsum dolor sit amet consectetur</p>
-    <div class="icon-container">
+<div class="icon-container">
+     <div class="icon-container">
+    <img src="icon/online.png">
+    <h>E-Commerce</h>
+    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Minima maxime quem architecto quo inventore harum ex magni, dicta impedit.</p>
+     </div>
+    <img src="icon/padlock.png">
+    <h>Responsive Design</h>
+    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Minima maxime quem architecto quo inventore harum ex magni, dicta impedit.</p>
     </div>
+    <img src="icon/responsive.png">
+    <h>Web Security</h>
+    <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Minima maxime quem architecto quo inventore harum ex magni, dicta impedit.</p>
     </div>
 </div>
+
 
 <div>
 <div class="portfolio">
@@ -115,33 +161,51 @@ grid-container img {
 <div class="grid-container">
     <div class="img1">
         <img src="portfolio/1.jpg"> 
-        <h>Threads</h>
+        <h1>Threads</h1>
         <p>Illustration</p> 
     </div>
     <div class="img2">    
 <img src="portfolio/2.jpg">
-<h>Explore</h>
+<h1>Explore</h1>
 <p>Graphic Design</p>
 </div>
     <div class="img3"> 
 <img src="portfolio/3.jpg">
-<h>Finish</h>
+<h1>Finish</h1>
 <p>Identity</p>
+</div>
      <div class="img4"> 
 <img src="portfolio/4.jpg">
-<h>Lines</h>
+<h1>Lines</h1>
 <p>Branding</p>
+</div>
       <div class="img5"> 
 <img src="portfolio/5.jpg">
-<h>Southwest</h>
+<h1>Southwest</h1>
 <p>Website Design</p>
+</div>
      <div class="img6"> 
 <img src="portfolio/6.jpg">
-<h>Portfolio</h>
+<h1>Portfolio</h1>
 <p>Photography</p>
-
+</div>
+</div>
 </div>
 
+
+<div>
+    <div class="About">
+     <h1>About</h1> 
+     <p>Lorem ipsum dolor sit amet consectetur</p>  
+    </div>
+<ul class="ul-container">
+    <li>
+    <img1 src="about/1.jpg" alt="our-startup">
+    <img2 src="about/2.jpg" alt="Academy Created">
+    <img3 src="about/3.jpg" alt="We offer full services">
+    <img4 src="about/4.jpg" alt="New begginigs">
+    </li>
+</ul>
 </div>
 
 </div>
