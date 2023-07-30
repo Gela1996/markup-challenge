@@ -74,10 +74,6 @@ position: relative;
 display: flex;
 justify-content: space-around;
 }
-.portfolio p h1 {
-    font-style: italic;
-    text-align: center;
-}
 
 .icon-container {
     display: flex;
@@ -115,17 +111,7 @@ justify-content: space-around;
 
 }
 
-.grid-container .img1
-.grid-container .img2
-.grid-container .img3
-.grid-container .img4
-.grid-container .img5
-.grid-container .img6 {
-    padding: 20px;
-    text-align: center;
-    height: 150px;
-    width: 100%;
-}
+
 
 .about {
     text-align: center;
@@ -136,6 +122,62 @@ justify-content: space-around;
     justify-content: center;
     display: flex;
 }
+ul {
+        list-style-type: none;
+        width: 100%;
+        max-width: 1200px;
+        margin: 0 auto;
+        position: relative;
+        height: auto;
+      }
+
+      ul::before {
+        content: '';
+        position: absolute;
+        left: 50%;
+        width: 2px;
+        top: 0;
+        bottom: 0;
+        background-color: gray;
+      }
+
+      li:not(:last-child) {
+        margin-bottom: 100px;
+        position: relative;
+        display: inline-block;
+      }
+
+     .about-section img {
+        width: 170px;
+        height: 170px;
+        border-radius: 50%;
+        left: 50%;
+        transform: translateX(-50%);
+        position: absolute;
+      }
+
+      .about-section {
+        width: 41%;
+        float: left;
+        text-align: right;
+        padding: 0 20px 20px 100px;
+        position: relative;
+      }
+
+      .timeline-heading {
+        margin-bottom: 20px;
+      }
+
+      .float-right .about-section {
+        float: right;
+        text-align: left;
+        padding: 0 100px 20px 20px;
+      }
+
+      h4 {
+        font-size: 1.5rem;
+        margin-bottom: 10px;
+      }
 
 
     </style>
@@ -223,22 +265,71 @@ justify-content: space-around;
 </div>
 </div>
 </div>
+</div>
 
-<div>
-    <div class="About">
-     <h1>About</h1> 
-     <p>Lorem ipsum dolor sit amet consectetur</p>  
-    </div>
-<ul class="ul-container">
+<ul>
     <li>
-    <img src="about/1.jpg" alt="our-startup">
-    <img src="about/2.jpg" alt="Academy Created">
-    <img src="about/3.jpg" alt="We offer full services">
-    <img src="about/4.jpg" alt="New begginigs">
+      <div class="about-section">
+        <div class="timeline-heading">
+          <h4>2009-2011</h4>
+          <h4 class="subheading">Our Startup</h4>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+            volaptatum eius sapiente, totam reiciendis temporibus qui
+            quibusdam, resujdjadae sit vero unde, sed, incideunt et ea quo
+            delore laudantium consectetur!
+          </p>
+        </div>
+      </div>
+      <img
+        class="image"
+        src="about/1.jpg"
+      />
     </li>
-</ul>
-</div>
+    <li class="float-right">
+      <div class="about-section">
+        <div class="timeline-heading">
+          <h4>2009-2011</h4>
+          <h4 class="subheading">Our Startup</h4>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+            volaptatum eius sapiente, totam reiciendis temporibus qui
+            quibusdam, resujdjadae sit vero unde, sed, incideunt et ea quo
+            delore laudantium consectetur!
+          </p>
+        </div>
+      </div>
+      <img
+        class="image"
+        src="about/2.jpg"
+      />
+    </li>
+    <li>
+      <div class="about-section">
+        <div class="timeline-heading">
+          <h4>2009-2011</h4>
+          <h4 class="subheading">Our Startup</h4>
+        </div>
+        <div>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt ut
+            volaptatum eius sapiente, totam reiciendis temporibus qui
+            quibusdam, resujdjadae sit vero unde, sed, incideunt et ea quo
+            delore laudantium consectetur!
+          </p>
+        </div>
+      </div>
+      <img
+        class="image"
+        src="about/3.jpg"
+        />
+    </li>
+  </ul>
 
-</div>
+  
 </body>
-</div>
+</html>
