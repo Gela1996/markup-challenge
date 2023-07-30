@@ -1,0 +1,105 @@
+
+        *{
+          box-sizing: border-box;  
+          margin: 0;
+          border: 0;
+        }
+.banner {
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-image: url(header-bg.jpg);
+}        
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 980px;
+    margin: auto;
+}
+.navbar ul li {
+list-style: none;
+display: inline-block;
+margin: 0 20px;
+color: aliceblue;
+}
+.content {
+    width: 100%;
+    position: absolute;
+    top: 50%;
+    text-align: center;
+    color: aliceblue;
+}
+.content p {
+    font-style: italic;
+    font-family: 70px;
+    font-size: 20px;
+    padding: 20px;
+}
+.button {
+        border: none;
+        padding: 10px 20px;
+        margin: 4px 2px;
+        font-size: 16px;
+        cursor: pointer;
+        border-radius: 8px; 
+        background-color: rgb(255, 208, 0);
+        color: white;
+}
+.services p {
+    font-style: italic;
+    text-align: center;
+    padding: 20px;
+}
+.services {
+    padding: 10px;
+}
+.portfolio {
+    text-align: center;
+    padding: 20px;
+    background-color: azure;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+}
+.portfolio p {
+    font-style: italic;
+}
+.icon-container {
+    display: flex;
+    gap: 10px;
+    justify-content: space-around;
+    padding: 20px;
+   
+}
+
+.grid-container {
+ 
+    background-color: azure;
+    display: grid;
+    justify-content: space-evenly;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    width: 100%;
+    max-width: 980px;
+    margin: 0 auto;
+
+}
+
+.grid-container .img1
+.grid-container .img2
+.grid-container .img3
+.grid-container .img4
+.grid-container .img5
+.grid-container .img6 {
+    padding: 20px;
+    text-align: center;
+    height: 150px;
+    width: 100%;
+}
+
+.about {
+    text-align: center;
+    font-style: italic;
+    padding: 20px;
+}
