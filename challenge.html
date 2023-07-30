@@ -58,22 +58,48 @@ color: aliceblue;
     padding: 10px;
 }
 .portfolio {
-    text-align: center;
-    padding: 20px;
-    background-color: azure;
-    width: 100%;
-    max-width: 980px;
-    margin: 0 auto;
+display: flex;
+flex-direction: column;
+padding: 20px;
+width: 100%;
+margin-top: 10px;
+box-sizing: border-box;
+justify-content: space-between;
 }
-.portfolio p {
+.portfolio img {
+width: 100%;
+height: 290px;
+background-size: cover;
+position: relative;
+display: flex;
+justify-content: space-around;
+}
+.portfolio p h1 {
     font-style: italic;
+    text-align: center;
 }
+
 .icon-container {
     display: flex;
-    gap: 10px;
     justify-content: space-around;
+    height: 250px;
+    align-items: center;
+    margin: 30px;
+}
+.icon1
+.icon2
+.icon3 {
+    margin: 20px;
     padding: 20px;
-   
+}
+.icon-container img {
+    display: flex;
+    height: 80px;
+    width: 80px;
+    border-radius: 10px solid yellow;
+    border-radius: 50%;
+    background-color: yellow;
+    align-items: center;
 }
 
 .grid-container {
@@ -138,16 +164,20 @@ color: aliceblue;
     <h1 style="text-align: center">SERVICES</h1>
     <p>Lorem ipsum dolor sit amet consectetur</p>
 <div class="icon-container">
-     <div class="icon-container">
-    <img src="icon/online.png">
+     <div class="icon1">
+    <img src="icon/online.png" alt="">
     <h>E-Commerce</h>
     <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Minima maxime quem architecto quo inventore harum ex magni, dicta impedit.</p>
-     </div>
-    <img src="icon/padlock.png">
+     
+    </div>
+     <div class="icon2">
+    <img src="icon/padlock.png" alt="">
     <h>Responsive Design</h>
     <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Minima maxime quem architecto quo inventore harum ex magni, dicta impedit.</p>
     </div>
-    <img src="icon/responsive.png">
+
+   <div class="icon3">
+    <img src="icon/responsive.png" alt="">
     <h>Web Security</h>
     <p>Lorem ipsum dolor sit amet,consectetur adipisicing elit. Minima maxime quem architecto quo inventore harum ex magni, dicta impedit.</p>
     </div>
@@ -158,12 +188,14 @@ color: aliceblue;
 <div class="portfolio">
 <h1 style="text-align: center">PORTFOLIO</h1>
 <p>Lorem ipsum dolor sit amet consectetur</p>
+<div class="portfolio-card-container">
 <div class="grid-container">
     <div class="img1">
         <img src="portfolio/1.jpg"> 
         <h1>Threads</h1>
         <p>Illustration</p> 
     </div>
+    
     <div class="img2">    
 <img src="portfolio/2.jpg">
 <h1>Explore</h1>
@@ -192,7 +224,6 @@ color: aliceblue;
 </div>
 </div>
 
-
 <div>
     <div class="About">
      <h1>About</h1> 
@@ -200,10 +231,10 @@ color: aliceblue;
     </div>
 <ul class="ul-container">
     <li>
-    <img1 src="about/1.jpg" alt="our-startup">
-    <img2 src="about/2.jpg" alt="Academy Created">
-    <img3 src="about/3.jpg" alt="We offer full services">
-    <img4 src="about/4.jpg" alt="New begginigs">
+    <img src="about/1.jpg" alt="our-startup">
+    <img src="about/2.jpg" alt="Academy Created">
+    <img src="about/3.jpg" alt="We offer full services">
+    <img src="about/4.jpg" alt="New begginigs">
     </li>
 </ul>
 </div>
